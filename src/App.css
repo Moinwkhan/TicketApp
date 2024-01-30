@@ -1,0 +1,260 @@
+.App {
+  text-align: center;
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* css home component */
+
+.panel > * {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.panel > *:first-child {
+  transform: translateY(-100%);
+  font-family: cursive;
+}
+.panel.open-active > *:first-child {
+  transform: translateY(20%);
+  color: #ffff;
+  font-family: cursive;
+}
+.panel > *:last-child {
+  transform: translateY(100%);
+  font-family: cursive;
+}
+.panel.open-active > *:last-child {
+  transform: translateY(-25%);
+  color: #ffff;
+}
+.panels {
+  display: flex;
+  min-height: 100vh;
+  flex: 0 1 auto;
+  position: fixed;
+  top: 6rem;
+  width: 100%;
+}
+@media screen and (max-width: 450px) {
+  .panels {
+    background-image: url("https://w0.peakpx.com/wallpaper/729/1021/HD-wallpaper-steam-train-trains.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.Homemobile {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .Homemobile {
+    display: grid;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: wheat;
+  }
+}
+
+.mobilebtn {
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+}
+
+.panel {
+  display: flex;
+  flex: 1;
+  color: #ffff;
+  font-family: cursive;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  transition: font-size 0.7s, flex 0.9s, background 0.2s;
+}
+@media screen and (max-width: 450px) {
+  .panel {
+    display: none;
+  }
+}
+.panel.open {
+  flex: 3;
+  font-size: 50px;
+}
+
+.panel1 {
+  background-image: url(https://source.unsplash.com/600x600/?hello);
+}
+.panel2 {
+  background-image: url(https://source.unsplash.com/600x600/?railway);
+}
+.panel3 {
+  background-image: url(https://source.unsplash.com/600x600/?waterfall,,greeny);
+}
+@media screen and (max-width: 500px) {
+  .panel2 {
+    background-image: none;
+  }
+  .panel3 {
+    background-image: none;
+  }
+}
+p:nth-child(2) {
+  font-size: 3rem;
+}
+
+.home {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+/* Css of ticketBooking */
+.heading {
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+}
+
+@media screen and (max-width: 700px) {
+  .heading {
+    top: 25%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .heading{
+    top: 14%;
+  }
+}
+
+.trains {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  height: 500px;
+}
+
+.ticketss {
+  position: absolute;
+  top: 40%;
+  grid-gap: 50px;
+}
+
+@media screen and (max-width: 400px) {
+  .ticketss {
+    top: 38%;
+    width: 389px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ticketss {
+    top: 36%;
+    width: 428px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .ticketss {
+    top: 26%;
+  }
+}
+
+.content {
+  position: relative;
+  top: 3px;
+}
+
+.load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+}
+
+.loader {
+  width: 100px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 10px solid #0000;
+  border-radius: 50%;
+  border-right-color: #25b09b;
+  animation: l15 1s infinite linear;
+}
+.loader::before,
+.loader::after {    
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+  animation: l15 2s infinite;
+}
+.loader::after {
+  margin: 8px;
+  animation-duration: 3s;
+}
+@keyframes l15{ 
+  100%{transform: rotate(1turn)}
+}
+
+.Ticketbook {
+  position: absolute;
+  top: 23%;
+  left: 84%;
+}
+@media screen and (max-width: 400px) {
+  .Ticketbook {
+    width: max-content;
+    top: 23%;
+    left: 63%;
+    transform: translate(-50px, -50px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .Ticketbook {
+    width: max-content;
+    top: 20%;
+    left: 65%;
+    transform: translate(-50px, -50px);
+  }
+}
+@media screen and (max-width: 1350px) {
+  .Ticketbook {
+    width: max-content;
+    top: 19%;
+    left: 83%;
+    transform: translate(-50px, -50px);
+  }
+}
+
+.del {
+  position: relative;
+  left: 100px;
+}
+
+.custom-modal {
+  position: fixed;
+  top: 47.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
