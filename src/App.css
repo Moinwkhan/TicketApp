@@ -138,7 +138,7 @@ p:nth-child(2) {
   }
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1000px) {
   .heading{
     top: 14%;
   }
@@ -171,7 +171,7 @@ p:nth-child(2) {
     width: 428px;
   }
 }
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1000px) {
   .ticketss {
     top: 26%;
   }
@@ -238,7 +238,7 @@ p:nth-child(2) {
     transform: translate(-50px, -50px);
   }
 }
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1000px) {
   .Ticketbook {
     width: max-content;
     top: 19%;
